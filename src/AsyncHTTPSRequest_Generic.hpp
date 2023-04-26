@@ -347,10 +347,10 @@ class AsyncHTTPSRequest
       }
     };
 
+  public:
     typedef std::function<void(void*, AsyncHTTPSRequest*, int readyState)> readyStateChangeCB;
     typedef std::function<void(void*, AsyncHTTPSRequest*, size_t available)> onDataCB;
 
-  public:
     AsyncHTTPSRequest();
     ~AsyncHTTPSRequest();
 
